@@ -1,0 +1,7 @@
+{
+	"GITHUB_USER": "username",
+	"GITHUB_TOKEN": "token",
+	"GITHUB_REPOSITORY": "username/reponame",
+
+	"ENTRYPOINT": "cd reponame && docker-compose up"
+}
