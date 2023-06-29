@@ -1,5 +1,5 @@
 # autodeploy
-Simple code for automatic deploy of your application on server.
+Simple code for automatic deploy of your application on your linux-server.
 It pulls latest updates from your github repo and restarts your application.
 
 ## Pre-dependencies
