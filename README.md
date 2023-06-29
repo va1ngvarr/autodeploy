@@ -1,12 +1,21 @@
 # autodeploy
-Simple code for automatic deploy of your application on server. It pulls latest updates from your github repo and your restarts application.
+Simple code for automatic deploy of your application on server.
+It pulls latest updates from your github repo and restarts your application.
+
+## Pre-dependencies
+```
+python3
+python3-pip
+git
+```
 ## Usage
 ```
 git clone https://github.com/va1ngvarr/autodeploy
 ```
 Edit config at `autodeploy/git_config.json`. Put there your github access token, reponame, username and entrypoint command.
 ```
-cd autodeploy && python3 install.py
+cd autodeploy && pip install -r requirements.txt
+python3 install.py
 curl -X POST http://hostname:port/repo-is-updated
 ```
 Your application should has been running.
