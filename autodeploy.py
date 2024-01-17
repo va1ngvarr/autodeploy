@@ -38,7 +38,7 @@ async def webhook_endpoint(request):
         # Wait for the process to finish
         app_proc.join()
 
-    os.system("bash ./git-clone-repo-with-token.sh")
+    os.system("cd .. && bash ./git-clone-repo-with-token.sh")
 
     command = config["ENTRYPOINT"]
     start_app = lambda: os.system(command)
