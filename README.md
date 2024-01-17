@@ -8,7 +8,9 @@ python3
 python3-pip
 git
 ```
-## Usage
+
+## Installing
+Clone the repo at the directory that should contain the repo you want to deploy.
 ```
 git clone https://github.com/va1ngvarr/autodeploy
 ```
@@ -16,9 +18,15 @@ Edit config at `autodeploy/git_config.json`. Put there your github access token,
 ```
 cd autodeploy && pip install -r requirements.txt
 python3 install.py
+```
+
+## Usage
+Send POST-request to the end-point and the project will pull and be reloaded.
+```
 curl -X POST http://hostname:port/repo-is-updated
 ```
-Your application should has been running.
+Your application should be running now.
+
 ### Good practices
 You may use github webhooks to deploy application when repo updated.
 
